@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder of Everything | Discord Bot</title>
+    <style>
+        :root {
+            --blurple: #5865F2;
+            --dark-bg: #23272A;
+            --dark-card: #2C2F33;
+            --white: #ffffff;
+            --text-muted: #B9BBBE;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            margin: 0;
+            line-height: 1.6;
+        }
+        nav {
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.2);
+        }
+        .logo { font-weight: bold; font-size: 1.5rem; color: var(--blurple); }
+        .hero {
+            text-align: center;
+            padding: 80px 10%;
+            background: linear-gradient(180deg, #2c2f33 0%, #23272a 100%);
+        }
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; }
+        .btn {
+            background-color: var(--blurple);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { background-color: #4752C4; }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 60px 10%;
+        }
+        .feature-card {
+            background: var(--dark-card);
+            padding: 30px;
+            border-radius: 10px;
+            border-bottom: 3px solid var(--blurple);
+        }
+        .feature-card h3 { color: var(--blurple); margin-top: 0; }
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Wonder of Everything</div>
+        <div>
+            <a href="ToS.pdf" style="color:white; text-decoration:none; margin-left:20px;">Terms</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Wonder of Everything</h1>
+        <p>The ultimate all-in-one Discord companion. High-level moderation meets whimsical community engagement.</p>
+        <a href="#" class="btn">Invite to Server</a>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>🛡️ Admin Power</h3>
+            <p>Swiftly manage your community with kick, ban, and timeout commands. Detailed logging ensures you never miss a thing.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎲 Fun & Games</h3>
+            <p>From custom easter eggs to leveling systems, keep your members active and entertained 24/7.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🛠️ Mod Utilities</h3>
+            <p>Smart auto-mod filters, poll generators, and server snapshots designed for modern community leaders.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Wonder of Everything. Not affiliated with Discord Inc.
+    </footer>
+</body>
+</html>
